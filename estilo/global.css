@@ -25,6 +25,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .logo{
     color: rgb(255, 69, 208);
@@ -59,7 +60,7 @@ nav ul li:hover{
     transition: all 0.2s;
     font-weight: bold;
 }
-.menu-botton{
+.menu-button{
     display: none;
 }
 header{
@@ -105,4 +106,32 @@ header{
 }
 .header-button-side-right img{
     width: 100%;
+}
+@media (max-width: 800px){
+    .logo{
+        font-size: 1.2rem;
+
+    }
+    .header-button-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+    nav{
+        position: absolute;
+        background-color: rgb(138, 22, 113);
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
 }

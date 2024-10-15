@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="estilo/global.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="header-inner-content">
+    <div class="navbar show-menu">
+        <div class="header-inner-content " >
             <h1 class="logo">Gym<span>Girls</span></h1>
             <nav>
                 <ul>
@@ -21,7 +21,7 @@
             </nav>
             <div class="nav-icon-content">
                 <img src="images/cart.png">
-                <img src="images/menu.png" class="menu-botton">
+                <img src="images/menu.png" class="menu-button">
             </div>
         </div>
     </div>
@@ -42,5 +42,15 @@
             </div>
         </div>
     </header>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menubutton = document.querySelector("menu-botton");
+
+            menubotton.addEventListener("click", () => {
+                navbar.classList.toggle("show-menu");
+            });
+
+    </script>
 </body>
 </html>
