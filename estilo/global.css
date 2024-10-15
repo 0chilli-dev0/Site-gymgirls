@@ -70,7 +70,7 @@ header{
     display: flex;
     align-items: center;
     justify-self: center;
-    padding: 1rem;
+    padding-top: 1rem;
 }
 .header-button-side-left{
     height: 100%;
@@ -110,7 +110,9 @@ header{
 @media (max-width: 800px){
     .logo{
         font-size: 1.2rem;
-
+    }
+    .menu-button{
+        display: block;
     }
     .header-button-side{
         flex-direction: column;
@@ -124,7 +126,7 @@ header{
         top: 46px;
         display: none;
     }
-    .menu-button{
+    .show-menu nav{
         display: block;
     }
     nav ul{
