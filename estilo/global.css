@@ -6,7 +6,8 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-}
+} 
+/* Cabecalho */
 .header-inner-content{
     max-width: 1300px;
     margin-left: auto;
@@ -63,6 +64,7 @@ nav ul li:hover{
 .menu-button{
     display: none;
 }
+/* primeiro produto */
 header{
     background-image: radial-gradient(#fff, #c7c7c7);
 }
@@ -115,15 +117,69 @@ header{
     max-width: 1280px;
     margin: 0 auto;
 }
+/* Parte dos produtos  */
+
+main{
+    background-color: #eeeeee;
+}
 .cols{
     display: grid;
-    justify-content: space-evenly;
     padding: 4rem 1rem;
+    justify-content: center;
 }
 .cols-3{
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
+.cols-3 img{
+max-width: 100%;
+}
+.cols-4 img{
+    max-width: 100%;
+    }
+
+.cols-4{grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.cols>*:hover{
+transform: translatey(-5px);
+}
+.section-title{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 1.8rem;
+}
+.subtitle-underline{
+    width: 100px;
+    height: 5px;
+    background-color: rgb(194, 13, 164);
+    border-radius: 9999px;
+    margin: 8px auto 0 auto;
+}
+.product{
+    color: #2c2c2c;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.product-name{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+.rate{
+    color: rgb(226, 12, 215);
+    font-size: 1.3rem;
+}
+.product-price span{
+    font-weight: 600;
+}
+
+/* Media query */
+
 @media (max-width: 650px){
     .logo{
         font-size: 1.2rem;
@@ -153,5 +209,6 @@ header{
         text-align: center;
         padding: 0.8rem;
     }
+    
     
 }
