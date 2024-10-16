@@ -75,6 +75,7 @@ header{
 .header-button-side-left{
     height: 100%;
     flex-basis: 50%;
+    text-align: center;
 }
 .header-button-side-left h2{
     font-size: 3.2rem;
@@ -107,7 +108,7 @@ header{
 .header-button-side-right img{
     width: 100%;
 }
-@media (max-width: 800px){
+@media (max-width: 650px){
     .logo{
         font-size: 1.2rem;
     }
@@ -126,7 +127,7 @@ header{
         top: 46px;
         display: none;
     }
-    .show-menu nav{
+    .show-menu{
         display: block;
     }
     nav ul{
