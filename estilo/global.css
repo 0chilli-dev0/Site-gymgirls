@@ -108,6 +108,22 @@ header{
 .header-button-side-right img{
     width: 100%;
 }
+.gray-background{
+    background-color: rgb(46, 46, 46);
+}
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.cols{
+    display: grid;
+    justify-content: space-evenly;
+    padding: 4rem 1rem;
+}
+.cols-3{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
 @media (max-width: 650px){
     .logo{
         font-size: 1.2rem;
@@ -137,4 +153,5 @@ header{
         text-align: center;
         padding: 0.8rem;
     }
+    
 }
