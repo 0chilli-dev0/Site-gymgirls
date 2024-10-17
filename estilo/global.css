@@ -66,7 +66,7 @@ nav ul li:hover{
 }
 /* primeiro produto */
 header{
-    background-image: radial-gradient(#fff, #c7c7c7);
+    background-image: radial-gradient(#b3b3b3, #747474);
 }
 .header-button-side{
     display: flex;
@@ -132,10 +132,11 @@ main{
     gap: 3rem;
 }
 .cols-3 img{
-max-width: 100%;
+   max-width: 100%;
 }
 .cols-4 img{
     max-width: 100%;
+    height: 310px;
     }
 
 .cols-4{grid-template-columns: repeat(4, 1fr);
@@ -177,6 +178,15 @@ transform: translatey(-5px);
 .product-price span{
     font-weight: 600;
 }
+.exclusive-container{
+    background-color: white;
+    flex-direction: row-reverse;
+    padding: 5rem 1rem;
+}
+.exclusive-container img{
+    max-width: 500px;
+    border-radius: 30px;
+}
 
 /* Media query */
 
@@ -210,5 +220,24 @@ transform: translatey(-5px);
         padding: 0.8rem;
     }
     
-    
+    .section-title{
+        font-size: 1rem;
+    }
+    .cols-3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cols-4{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-name, .product-price, .rate{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 0.8rem;
+    }
+    .exclusive-container{
+        flex-direction: column-reverse;
+    }
+    .exclusive-container img{
+        margin-bottom: 4rem;
+    }
 }
